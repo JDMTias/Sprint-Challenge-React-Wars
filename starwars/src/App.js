@@ -29,7 +29,7 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">Characters</h1>
-      <div>
+      <div style={{display: 'flex', direction: 'row', width:'100%', flexWrap: 'wrap',  justifyContent: 'center'}}>
         <Character characterData={characterData}/>
       </div>
     </div>

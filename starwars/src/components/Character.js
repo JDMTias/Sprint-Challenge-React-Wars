@@ -1,17 +1,24 @@
 import React from "react";
+import {
+  Card,
+  CardImg,
+  CardBody,
+  CardText,
+  CardTitle,
+} from "reactstrap";
 
 const Character = (props) => {
   return (
     <div>
       {props.characterData.map((character) => (
         <div>
-          <h2>{character.name}</h2>
-          <p>Birthyear: {character.birth_year}</p>
-          <p>Homeworld: {character.homworld}</p>
-          <p>Height: {character.height}</p>
-          <p>Hair Color: {character.hair_color}</p>
-          <p>Eye Color: {character.eye_color}</p>
-          <p>Gender: {character.gender}</p>
+          <Card style={{marginTop:'10%', backgroundColor: 'lightgrey'}}>
+              <CardTitle>{character.name}</CardTitle>
+              <CardText>Birthyear: {character.birth_year}</CardText>
+              <CardText>Hair Color: {character.hair_color}</CardText>
+              <CardText>Eye Color: {character.eye_color}</CardText>
+              <CardText>Gender: {character.gender}</CardText>
+          </Card>
         </div>
       ))}
     </div>
