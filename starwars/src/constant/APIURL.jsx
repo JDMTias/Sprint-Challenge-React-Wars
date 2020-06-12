@@ -1,0 +1,1 @@
+export const jediArchives = 'https://swapi.py4e.com/api/people/'
